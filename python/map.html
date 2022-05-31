@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6cb55cf7a63e576b5a268bab58fddfe8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6cb55cf7a63e576b5a268bab58fddfe8" ></div>
+        
+</body>
+<script>    
+    
+            var map_6cb55cf7a63e576b5a268bab58fddfe8 = L.map(
+                "map_6cb55cf7a63e576b5a268bab58fddfe8",
+                {
+                    center: [64.49, -18.14],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    name: "Volcanes Map",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ace0f6077d400ced4d346adb30725f35 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6cb55cf7a63e576b5a268bab58fddfe8);
+        
+    
+            var feature_group_a547ddeef3a697b7aa94a5f4e5138377 = L.featureGroup(
+                {}
+            ).addTo(map_6cb55cf7a63e576b5a268bab58fddfe8);
+        
+    
+            var marker_f4532162994fc6dd2440019dd7d2ddee = L.marker(
+                [65.35, -16.75],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_ea1fed1374906b9802e0de61a3cbc3fe = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_f4532162994fc6dd2440019dd7d2ddee.setIcon(beautify_icon_ea1fed1374906b9802e0de61a3cbc3fe);
+        
+    
+        var popup_dd749cf6f5d56c38cc1c3d38ccf9432d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4fafc980213572d4f68e617002f3ecd = $(`<div id="html_a4fafc980213572d4f68e617002f3ecd" style="width: 100.0%; height: 100.0%;">Volcano name: Askja Height: 1516 m Longitude: 65.03 N Latitude: 16.47 W</div>`)[0];
+            popup_dd749cf6f5d56c38cc1c3d38ccf9432d.setContent(html_a4fafc980213572d4f68e617002f3ecd);
+        
+
+        marker_f4532162994fc6dd2440019dd7d2ddee.bindPopup(popup_dd749cf6f5d56c38cc1c3d38ccf9432d)
+        ;
+
+        
+    
+    
+            marker_f4532162994fc6dd2440019dd7d2ddee.bindTooltip(
+                `<div>
+                     Askja Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82cd4a1ff849adc5d5245920c456faf8 = L.marker(
+                [64.69999999999999, -17.580000000000002],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_26551f67b08fab773da28cbee8a52b39 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_82cd4a1ff849adc5d5245920c456faf8.setIcon(beautify_icon_26551f67b08fab773da28cbee8a52b39);
+        
+    
+        var popup_79d585ad07bf46be0f7e4a99c1e513f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4fced310520b70450de9b916bad8857 = $(`<div id="html_a4fced310520b70450de9b916bad8857" style="width: 100.0%; height: 100.0%;">Volcano name: Bardarbunga Height: 2000 m Longitude: 64.38 N Latitude: 17.3 W</div>`)[0];
+            popup_79d585ad07bf46be0f7e4a99c1e513f6.setContent(html_a4fced310520b70450de9b916bad8857);
+        
+
+        marker_82cd4a1ff849adc5d5245920c456faf8.bindPopup(popup_79d585ad07bf46be0f7e4a99c1e513f6)
+        ;
+
+        
+    
+    
+            marker_82cd4a1ff849adc5d5245920c456faf8.bindTooltip(
+                `<div>
+                     Bardarbunga Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3865fd6a5059b171431babd60948de9 = L.marker(
+                [63.89, -21.73],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_9921b68d93df9605fbfd7a3040c61835 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_a3865fd6a5059b171431babd60948de9.setIcon(beautify_icon_9921b68d93df9605fbfd7a3040c61835);
+        
+    
+        var popup_259a4d9d87e07da74648004270cccb1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b71d5f73f987410cf8e7cf42081e7150 = $(`<div id="html_b71d5f73f987410cf8e7cf42081e7150" style="width: 100.0%; height: 100.0%;">Volcano name: Brennisteinsfjoll Height: 610 m Longitude: 63.57 N Latitude: 21.45 W</div>`)[0];
+            popup_259a4d9d87e07da74648004270cccb1e.setContent(html_b71d5f73f987410cf8e7cf42081e7150);
+        
+
+        marker_a3865fd6a5059b171431babd60948de9.bindPopup(popup_259a4d9d87e07da74648004270cccb1e)
+        ;
+
+        
+    
+    
+            marker_a3865fd6a5059b171431babd60948de9.bindTooltip(
+                `<div>
+                     Brennisteinsfjoll Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f03c3d50e7164a94b40b682422fd76fe = L.marker(
+                [63.76, -23.28],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_3457bf988038d9277e8ecf9c563886e5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_f03c3d50e7164a94b40b682422fd76fe.setIcon(beautify_icon_3457bf988038d9277e8ecf9c563886e5);
+        
+    
+        var popup_6d3dadaec6ba267a2fc106fd2668f863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a94dc3c9f763ba6380d6eb9771ec38eb = $(`<div id="html_a94dc3c9f763ba6380d6eb9771ec38eb" style="width: 100.0%; height: 100.0%;">Volcano name: Eldey Height: 70 m Longitude: 63.44 N Latitude: 23.0 W</div>`)[0];
+            popup_6d3dadaec6ba267a2fc106fd2668f863.setContent(html_a94dc3c9f763ba6380d6eb9771ec38eb);
+        
+
+        marker_f03c3d50e7164a94b40b682422fd76fe.bindPopup(popup_6d3dadaec6ba267a2fc106fd2668f863)
+        ;
+
+        
+    
+    
+            marker_f03c3d50e7164a94b40b682422fd76fe.bindTooltip(
+                `<div>
+                     Eldey Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d4892c1ad32d4d9974b62e7220ac019 = L.marker(
+                [64.49, -16.630000000000003],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_195ec3b5307a9a21046bbc95d810ad52 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_0d4892c1ad32d4d9974b62e7220ac019.setIcon(beautify_icon_195ec3b5307a9a21046bbc95d810ad52);
+        
+    
+        var popup_cb604016ec0c4c1f9a57e201c9c5276e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_832f93e26a8c3460ff49773f64fe92d5 = $(`<div id="html_832f93e26a8c3460ff49773f64fe92d5" style="width: 100.0%; height: 100.0%;">Volcano name: Esjufjoll Height: 1745 m Longitude: 64.17 N Latitude: 16.35 W</div>`)[0];
+            popup_cb604016ec0c4c1f9a57e201c9c5276e.setContent(html_832f93e26a8c3460ff49773f64fe92d5);
+        
+
+        marker_0d4892c1ad32d4d9974b62e7220ac019.bindPopup(popup_cb604016ec0c4c1f9a57e201c9c5276e)
+        ;
+
+        
+    
+    
+            marker_0d4892c1ad32d4d9974b62e7220ac019.bindTooltip(
+                `<div>
+                     Esjufjoll Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14a864ad3c850ba12efbe789628f3cb5 = L.marker(
+                [63.7, -19.66],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_7f9552a649e8ef6184a422e0609ce6ff = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_14a864ad3c850ba12efbe789628f3cb5.setIcon(beautify_icon_7f9552a649e8ef6184a422e0609ce6ff);
+        
+    
+        var popup_e831b1fbe28f0719e1072de573f8ad03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b920c566cd56da6885bf333f6befba0b = $(`<div id="html_b920c566cd56da6885bf333f6befba0b" style="width: 100.0%; height: 100.0%;">Volcano name: Eyjafjallajokull Height: 1651 m Longitude: 63.38 N Latitude: 19.38 W</div>`)[0];
+            popup_e831b1fbe28f0719e1072de573f8ad03.setContent(html_b920c566cd56da6885bf333f6befba0b);
+        
+
+        marker_14a864ad3c850ba12efbe789628f3cb5.bindPopup(popup_e831b1fbe28f0719e1072de573f8ad03)
+        ;
+
+        
+    
+    
+            marker_14a864ad3c850ba12efbe789628f3cb5.bindTooltip(
+                `<div>
+                     Eyjafjallajokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e2cbbabbf2750bb99c5c205e7427c4a = L.marker(
+                [65.58, -16.68],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_a4a0af9059b14427680db35dd18a405d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_6e2cbbabbf2750bb99c5c205e7427c4a.setIcon(beautify_icon_a4a0af9059b14427680db35dd18a405d);
+        
+    
+        var popup_f6d0e57d64b816f23b2ed400272be0bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3af8ed598721801ea9dbe08d060de3c = $(`<div id="html_e3af8ed598721801ea9dbe08d060de3c" style="width: 100.0%; height: 100.0%;">Volcano name: Fremrinamar Height: 970 m Longitude: 65.26 N Latitude: 16.4 W</div>`)[0];
+            popup_f6d0e57d64b816f23b2ed400272be0bc.setContent(html_e3af8ed598721801ea9dbe08d060de3c);
+        
+
+        marker_6e2cbbabbf2750bb99c5c205e7427c4a.bindPopup(popup_f6d0e57d64b816f23b2ed400272be0bc)
+        ;
+
+        
+    
+    
+            marker_6e2cbbabbf2750bb99c5c205e7427c4a.bindTooltip(
+                `<div>
+                     Fremrinamar Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9602f5032d67ca69988653b1f1767ab = L.marker(
+                [64.57, -17.48],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_a070d5b283571e0346f6f5a23ff150d0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_e9602f5032d67ca69988653b1f1767ab.setIcon(beautify_icon_a070d5b283571e0346f6f5a23ff150d0);
+        
+    
+        var popup_7f27d752be58913bf6c0347dcbe0ca31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d483f9d99a9f4a1d9c7103dd24924f70 = $(`<div id="html_d483f9d99a9f4a1d9c7103dd24924f70" style="width: 100.0%; height: 100.0%;">Volcano name: Grimsvotn Height: 1722 m Longitude: 64.25 N Latitude: 17.2 W</div>`)[0];
+            popup_7f27d752be58913bf6c0347dcbe0ca31.setContent(html_d483f9d99a9f4a1d9c7103dd24924f70);
+        
+
+        marker_e9602f5032d67ca69988653b1f1767ab.bindPopup(popup_7f27d752be58913bf6c0347dcbe0ca31)
+        ;
+
+        
+    
+    
+            marker_e9602f5032d67ca69988653b1f1767ab.bindTooltip(
+                `<div>
+                     Grimsvotn Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1400ab18eee5e1cf93bae87328e5438 = L.marker(
+                [64.35, -20.810000000000002],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_dba17147aa43ad03731c6b5a55c59d0a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_d1400ab18eee5e1cf93bae87328e5438.setIcon(beautify_icon_dba17147aa43ad03731c6b5a55c59d0a);
+        
+    
+        var popup_495fef6737a6a747da3ea0b36e3a371e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bc7f630df1d872a590f35fed9bc5646 = $(`<div id="html_8bc7f630df1d872a590f35fed9bc5646" style="width: 100.0%; height: 100.0%;">Volcano name: Grimsnes Height: 200 m Longitude: 64.03 N Latitude: 20.53 W</div>`)[0];
+            popup_495fef6737a6a747da3ea0b36e3a371e.setContent(html_8bc7f630df1d872a590f35fed9bc5646);
+        
+
+        marker_d1400ab18eee5e1cf93bae87328e5438.bindPopup(popup_495fef6737a6a747da3ea0b36e3a371e)
+        ;
+
+        
+    
+    
+            marker_d1400ab18eee5e1cf93bae87328e5438.bindTooltip(
+                `<div>
+                     Grimsnes Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3677785dbae857f8053d365449b2861 = L.marker(
+                [65.66999999999999, -16.77],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_14eff8784639a9a63d0d0650ce2ce650 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_c3677785dbae857f8053d365449b2861.setIcon(beautify_icon_14eff8784639a9a63d0d0650ce2ce650);
+        
+    
+        var popup_54f23e1782405cd25ba518ce6427f845 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a05ccc1676450d9a1ab6709aa0d7388e = $(`<div id="html_a05ccc1676450d9a1ab6709aa0d7388e" style="width: 100.0%; height: 100.0%;">Volcano name: Heidarspordar Height: 490 m Longitude: 65.35 N Latitude: 16.49 W</div>`)[0];
+            popup_54f23e1782405cd25ba518ce6427f845.setContent(html_a05ccc1676450d9a1ab6709aa0d7388e);
+        
+
+        marker_c3677785dbae857f8053d365449b2861.bindPopup(popup_54f23e1782405cd25ba518ce6427f845)
+        ;
+
+        
+    
+    
+            marker_c3677785dbae857f8053d365449b2861.bindTooltip(
+                `<div>
+                     Heidarspordar Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89299caa82f9dfb2eb3493b8535cd8e1 = L.marker(
+                [63.92, -19.68],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_3e6976917f732d4c05c4ef403b650eac = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_89299caa82f9dfb2eb3493b8535cd8e1.setIcon(beautify_icon_3e6976917f732d4c05c4ef403b650eac);
+        
+    
+        var popup_91ea31788afafd432d34ac44e077a6f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04aaad16e9b30bed5dcfe93dcd06d4c8 = $(`<div id="html_04aaad16e9b30bed5dcfe93dcd06d4c8" style="width: 100.0%; height: 100.0%;">Volcano name: Hekla Height: 1490 m Longitude: 63.60 N Latitude: 19.4 W</div>`)[0];
+            popup_91ea31788afafd432d34ac44e077a6f0.setContent(html_04aaad16e9b30bed5dcfe93dcd06d4c8);
+        
+
+        marker_89299caa82f9dfb2eb3493b8535cd8e1.bindPopup(popup_91ea31788afafd432d34ac44e077a6f0)
+        ;
+
+        
+    
+    
+            marker_89299caa82f9dfb2eb3493b8535cd8e1.bindTooltip(
+                `<div>
+                     Hekla Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de03f2a44141642b6f1df94c78821467 = L.marker(
+                [64.83999999999999, -23.43],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_242e6081026e92ed05befd440997b8d1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_de03f2a44141642b6f1df94c78821467.setIcon(beautify_icon_242e6081026e92ed05befd440997b8d1);
+        
+    
+        var popup_da91bba8fd7f6ef50efafa3b89a4356d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76d291eee04da2f88403313419071205 = $(`<div id="html_76d291eee04da2f88403313419071205" style="width: 100.0%; height: 100.0%;">Volcano name: Helgrindur Height: 986 m Longitude: 64.52 N Latitude: 23.15 W</div>`)[0];
+            popup_da91bba8fd7f6ef50efafa3b89a4356d.setContent(html_76d291eee04da2f88403313419071205);
+        
+
+        marker_de03f2a44141642b6f1df94c78821467.bindPopup(popup_da91bba8fd7f6ef50efafa3b89a4356d)
+        ;
+
+        
+    
+    
+            marker_de03f2a44141642b6f1df94c78821467.bindTooltip(
+                `<div>
+                     Helgrindur Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9beca8dafc8f627f2f7b088a2f209d3f = L.marker(
+                [64.36999999999999, -21.46],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_2b8b63429877e68e52fd4957633d1aa0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_9beca8dafc8f627f2f7b088a2f209d3f.setIcon(beautify_icon_2b8b63429877e68e52fd4957633d1aa0);
+        
+    
+        var popup_5d7191e45c398529768fc0fe2a46da68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3158a9c583c37e3c36db83d8fac779b = $(`<div id="html_f3158a9c583c37e3c36db83d8fac779b" style="width: 100.0%; height: 100.0%;">Volcano name: Hengill Height: 803 m Longitude: 64.05 N Latitude: 21.18 W</div>`)[0];
+            popup_5d7191e45c398529768fc0fe2a46da68.setContent(html_f3158a9c583c37e3c36db83d8fac779b);
+        
+
+        marker_9beca8dafc8f627f2f7b088a2f209d3f.bindPopup(popup_5d7191e45c398529768fc0fe2a46da68)
+        ;
+
+        
+    
+    
+            marker_9beca8dafc8f627f2f7b088a2f209d3f.bindTooltip(
+                `<div>
+                     Hengill Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_868c00da36014536f5276649d8f588fa = L.marker(
+                [64.8, -18.82],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_bfeb638c02948c87a506ebd23fdc041f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_868c00da36014536f5276649d8f588fa.setIcon(beautify_icon_bfeb638c02948c87a506ebd23fdc041f);
+        
+    
+        var popup_133de5a784fbaa7aec34787ea008d89f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbd9f9aa95d878f30f078b35e1cddef3 = $(`<div id="html_dbd9f9aa95d878f30f078b35e1cddef3" style="width: 100.0%; height: 100.0%;">Volcano name: Hofsjokull Height: 1795 m Longitude: 64.48 N Latitude: 18.54 W</div>`)[0];
+            popup_133de5a784fbaa7aec34787ea008d89f.setContent(html_dbd9f9aa95d878f30f078b35e1cddef3);
+        
+
+        marker_868c00da36014536f5276649d8f588fa.bindPopup(popup_133de5a784fbaa7aec34787ea008d89f)
+        ;
+
+        
+    
+    
+            marker_868c00da36014536f5276649d8f588fa.bindTooltip(
+                `<div>
+                     Hofsjokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4c0e05ce1dd232556feea3892bec914 = L.marker(
+                [64.36, -21.400000000000002],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_062aad23c6c9d6ca904a0b888317d72e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_e4c0e05ce1dd232556feea3892bec914.setIcon(beautify_icon_062aad23c6c9d6ca904a0b888317d72e);
+        
+    
+        var popup_cf631c49c4f1e84534f8f40d7231f168 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_103e67a8bbe0c2c46272161419088e61 = $(`<div id="html_103e67a8bbe0c2c46272161419088e61" style="width: 100.0%; height: 100.0%;">Volcano name: Hromundartindur Height: 550 m Longitude: 64.04 N Latitude: 21.12 W</div>`)[0];
+            popup_cf631c49c4f1e84534f8f40d7231f168.setContent(html_103e67a8bbe0c2c46272161419088e61);
+        
+
+        marker_e4c0e05ce1dd232556feea3892bec914.bindPopup(popup_cf631c49c4f1e84534f8f40d7231f168)
+        ;
+
+        
+    
+    
+            marker_e4c0e05ce1dd232556feea3892bec914.bindTooltip(
+                `<div>
+                     Hromundartindur Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16a9edcfee6844480c0015cf8cfb4417 = L.marker(
+                [63.7, -19.35],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_0fde63536bea11995a5c22631f58f12f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_16a9edcfee6844480c0015cf8cfb4417.setIcon(beautify_icon_0fde63536bea11995a5c22631f58f12f);
+        
+    
+        var popup_b26ee39436257315d9bcb80f4aa0cfbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee49c4c250d7282607e2550c3706ef39 = $(`<div id="html_ee49c4c250d7282607e2550c3706ef39" style="width: 100.0%; height: 100.0%;">Volcano name: Katla Height: 1490 m Longitude: 63.38 N Latitude: 19.07 W</div>`)[0];
+            popup_b26ee39436257315d9bcb80f4aa0cfbc.setContent(html_ee49c4c250d7282607e2550c3706ef39);
+        
+
+        marker_16a9edcfee6844480c0015cf8cfb4417.bindPopup(popup_b26ee39436257315d9bcb80f4aa0cfbc)
+        ;
+
+        
+    
+    
+            marker_16a9edcfee6844480c0015cf8cfb4417.bindTooltip(
+                `<div>
+                     Katla Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82c8171924766c210fc230069d4bccd0 = L.marker(
+                [65.75, -16.75],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_0ddb7cc0c8841ce819fcbdc85be71de3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_82c8171924766c210fc230069d4bccd0.setIcon(beautify_icon_0ddb7cc0c8841ce819fcbdc85be71de3);
+        
+    
+        var popup_be1b28794ace43d115c4083623743510 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1c8042f02f86ff3076993971ab8ac49 = $(`<div id="html_e1c8042f02f86ff3076993971ab8ac49" style="width: 100.0%; height: 100.0%;">Volcano name: Krafla Height: 800 m Longitude: 65.43 N Latitude: 16.47 W</div>`)[0];
+            popup_be1b28794ace43d115c4083623743510.setContent(html_e1c8042f02f86ff3076993971ab8ac49);
+        
+
+        marker_82c8171924766c210fc230069d4bccd0.bindPopup(popup_be1b28794ace43d115c4083623743510)
+        ;
+
+        
+    
+    
+            marker_82c8171924766c210fc230069d4bccd0.bindTooltip(
+                `<div>
+                     Krafla Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69c7aa0962cd7150a9dd44e951ea0c38 = L.marker(
+                [63.87, -22.32],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_7cc2f6cd2bafd9af19602dde07b62a29 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_69c7aa0962cd7150a9dd44e951ea0c38.setIcon(beautify_icon_7cc2f6cd2bafd9af19602dde07b62a29);
+        
+    
+        var popup_b01e38b199bfa39e5ff713cad6580685 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daeaffc11447880776fbaa0680cdc584 = $(`<div id="html_daeaffc11447880776fbaa0680cdc584" style="width: 100.0%; height: 100.0%;">Volcano name: Krysuvik Height: 360 m Longitude: 63.55 N Latitude: 22.04 W</div>`)[0];
+            popup_b01e38b199bfa39e5ff713cad6580685.setContent(html_daeaffc11447880776fbaa0680cdc584);
+        
+
+        marker_69c7aa0962cd7150a9dd44e951ea0c38.bindPopup(popup_b01e38b199bfa39e5ff713cad6580685)
+        ;
+
+        
+    
+    
+            marker_69c7aa0962cd7150a9dd44e951ea0c38.bindTooltip(
+                `<div>
+                     Krysuvik Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d86167ab3d64bafb3e8b9ad8dc0c40f7 = L.marker(
+                [64.71, -16.68],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_f386b2a26682f7c28d5bed14ab0f0db2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_d86167ab3d64bafb3e8b9ad8dc0c40f7.setIcon(beautify_icon_f386b2a26682f7c28d5bed14ab0f0db2);
+        
+    
+        var popup_695ca003acffaf79efefff0043c258a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df0f471fa2a7744b11e28841f167f8a8 = $(`<div id="html_df0f471fa2a7744b11e28841f167f8a8" style="width: 100.0%; height: 100.0%;">Volcano name: Kverkfjoll Height: 1933 m Longitude: 64.39 N Latitude: 16.4 W</div>`)[0];
+            popup_695ca003acffaf79efefff0043c258a4.setContent(html_df0f471fa2a7744b11e28841f167f8a8);
+        
+
+        marker_d86167ab3d64bafb3e8b9ad8dc0c40f7.bindPopup(popup_695ca003acffaf79efefff0043c258a4)
+        ;
+
+        
+    
+    
+            marker_d86167ab3d64bafb3e8b9ad8dc0c40f7.bindTooltip(
+                `<div>
+                     Kverkfjoll Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5db1c50edbc85c4f79be08873926e29e = L.marker(
+                [64.83, -19.75],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_06da921cf13a6fc518525bab7b69f80d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_5db1c50edbc85c4f79be08873926e29e.setIcon(beautify_icon_06da921cf13a6fc518525bab7b69f80d);
+        
+    
+        var popup_9d2cb1b6edbc256bd19b1fbaa991d9b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b930b66e075e357f187fb49d4f7b6b8 = $(`<div id="html_1b930b66e075e357f187fb49d4f7b6b8" style="width: 100.0%; height: 100.0%;">Volcano name: Hveravellir Height: 1435 m Longitude: 64.51 N Latitude: 19.47 W</div>`)[0];
+            popup_9d2cb1b6edbc256bd19b1fbaa991d9b1.setContent(html_1b930b66e075e357f187fb49d4f7b6b8);
+        
+
+        marker_5db1c50edbc85c4f79be08873926e29e.bindPopup(popup_9d2cb1b6edbc256bd19b1fbaa991d9b1)
+        ;
+
+        
+    
+    
+            marker_5db1c50edbc85c4f79be08873926e29e.bindTooltip(
+                `<div>
+                     Hveravellir Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_706e374b0cdb6f79fda9eefc68980a2e = L.marker(
+                [64.86999999999999, -22.66],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_47f4fe4d306d0e28ef515068bfb85f20 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_706e374b0cdb6f79fda9eefc68980a2e.setIcon(beautify_icon_47f4fe4d306d0e28ef515068bfb85f20);
+        
+    
+        var popup_c2255ec594403f3f05be169979950c5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_671f3150435e54f17022f80775abf5ae = $(`<div id="html_671f3150435e54f17022f80775abf5ae" style="width: 100.0%; height: 100.0%;">Volcano name: Ljosufjoll Height: 1063 m Longitude: 64.55 N Latitude: 22.38 W</div>`)[0];
+            popup_c2255ec594403f3f05be169979950c5c.setContent(html_671f3150435e54f17022f80775abf5ae);
+        
+
+        marker_706e374b0cdb6f79fda9eefc68980a2e.bindPopup(popup_c2255ec594403f3f05be169979950c5c)
+        ;
+
+        
+    
+    
+            marker_706e374b0cdb6f79fda9eefc68980a2e.bindTooltip(
+                `<div>
+                     Ljosufjoll Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a61d68a50ddf6af6ce095bde26add2a2 = L.marker(
+                [64.67999999999999, -20.66],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_10d84a75c8de837a3415d4672a3f266e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_a61d68a50ddf6af6ce095bde26add2a2.setIcon(beautify_icon_10d84a75c8de837a3415d4672a3f266e);
+        
+    
+        var popup_e1a05bea9cce75181d259d9cc2c62916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93b9825f2cb9e9ec3a4ff1dcfb5e4d7e = $(`<div id="html_93b9825f2cb9e9ec3a4ff1dcfb5e4d7e" style="width: 100.0%; height: 100.0%;">Volcano name: Prestahnukur Height: 1385 m Longitude: 64.36 N Latitude: 20.38 W</div>`)[0];
+            popup_e1a05bea9cce75181d259d9cc2c62916.setContent(html_93b9825f2cb9e9ec3a4ff1dcfb5e4d7e);
+        
+
+        marker_a61d68a50ddf6af6ce095bde26add2a2.bindPopup(popup_e1a05bea9cce75181d259d9cc2c62916)
+        ;
+
+        
+    
+    
+            marker_a61d68a50ddf6af6ce095bde26add2a2.bindTooltip(
+                `<div>
+                     Prestahnukur Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7e9b1ebbb2c2322958cebbf3606863a = L.marker(
+                [63.81, -22.71],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_3ebc3372519f69bac8724d3f6a51afda = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_c7e9b1ebbb2c2322958cebbf3606863a.setIcon(beautify_icon_3ebc3372519f69bac8724d3f6a51afda);
+        
+    
+        var popup_a157dd407eb5cf9c49ff0dd3d9a7b91c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90b068b0388fc119e0a7b1ef76e36954 = $(`<div id="html_90b068b0388fc119e0a7b1ef76e36954" style="width: 100.0%; height: 100.0%;">Volcano name: Reykjanes Height: 140 m Longitude: 63.49 N Latitude: 22.43 W</div>`)[0];
+            popup_a157dd407eb5cf9c49ff0dd3d9a7b91c.setContent(html_90b068b0388fc119e0a7b1ef76e36954);
+        
+
+        marker_c7e9b1ebbb2c2322958cebbf3606863a.bindPopup(popup_a157dd407eb5cf9c49ff0dd3d9a7b91c)
+        ;
+
+        
+    
+    
+            marker_c7e9b1ebbb2c2322958cebbf3606863a.bindTooltip(
+                `<div>
+                     Reykjanes Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99271d9c8835649b259c48e5eba62ef0 = L.marker(
+                [64.8, -15.62],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_efcdae39c2a1f5fa266269cfe48fc88b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_99271d9c8835649b259c48e5eba62ef0.setIcon(beautify_icon_efcdae39c2a1f5fa266269cfe48fc88b);
+        
+    
+        var popup_7978898edc02a35182eb5790dcf4ba32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ed8910aae9df2c56ae9f8dd222b3068 = $(`<div id="html_8ed8910aae9df2c56ae9f8dd222b3068" style="width: 100.0%; height: 100.0%;">Volcano name: Snaefell Height: 1833 m Longitude: 64.48 N Latitude: 15.34 W</div>`)[0];
+            popup_7978898edc02a35182eb5790dcf4ba32.setContent(html_8ed8910aae9df2c56ae9f8dd222b3068);
+        
+
+        marker_99271d9c8835649b259c48e5eba62ef0.bindPopup(popup_7978898edc02a35182eb5790dcf4ba32)
+        ;
+
+        
+    
+    
+            marker_99271d9c8835649b259c48e5eba62ef0.bindTooltip(
+                `<div>
+                     Snaefell Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72d4c7b9c393a393d240a58a297cf7b5 = L.marker(
+                [64.8, -23.75],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_c04006664a6c4af1cb4e23acd0872924 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_72d4c7b9c393a393d240a58a297cf7b5.setIcon(beautify_icon_c04006664a6c4af1cb4e23acd0872924);
+        
+    
+        var popup_de7c8800d3b7a4be648c8234fbd4b50e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cb1a0f51066ff7a28c0cf9bd7cb4a39 = $(`<div id="html_5cb1a0f51066ff7a28c0cf9bd7cb4a39" style="width: 100.0%; height: 100.0%;">Volcano name: Snaefellsjokull Height: 1446 m Longitude: 64.48 N Latitude: 23.47 W</div>`)[0];
+            popup_de7c8800d3b7a4be648c8234fbd4b50e.setContent(html_5cb1a0f51066ff7a28c0cf9bd7cb4a39);
+        
+
+        marker_72d4c7b9c393a393d240a58a297cf7b5.bindPopup(popup_de7c8800d3b7a4be648c8234fbd4b50e)
+        ;
+
+        
+    
+    
+            marker_72d4c7b9c393a393d240a58a297cf7b5.bindTooltip(
+                `<div>
+                     Snaefellsjokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f8bf28bebcaa0840628243b76401fc6 = L.marker(
+                [63.79, -19.62],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_901a60c76945e1136f698787f97c5ffd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_7f8bf28bebcaa0840628243b76401fc6.setIcon(beautify_icon_901a60c76945e1136f698787f97c5ffd);
+        
+    
+        var popup_9d5f156a3cda2f0358f40429fa384388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48654a5e10bcba10ee2a55184284d58b = $(`<div id="html_48654a5e10bcba10ee2a55184284d58b" style="width: 100.0%; height: 100.0%;">Volcano name: Tindfjallajokull Height: 1464 m Longitude: 63.47 N Latitude: 19.34 W</div>`)[0];
+            popup_9d5f156a3cda2f0358f40429fa384388.setContent(html_48654a5e10bcba10ee2a55184284d58b);
+        
+
+        marker_7f8bf28bebcaa0840628243b76401fc6.bindPopup(popup_9d5f156a3cda2f0358f40429fa384388)
+        ;
+
+        
+    
+    
+            marker_7f8bf28bebcaa0840628243b76401fc6.bindTooltip(
+                `<div>
+                     Tindfjallajokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3869722c4835b3162a9799027dfc4266 = L.marker(
+                [63.88, -19.34],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_3189a6e2dc4c36181e652534f63cf8f2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_3869722c4835b3162a9799027dfc4266.setIcon(beautify_icon_3189a6e2dc4c36181e652534f63cf8f2);
+        
+    
+        var popup_9bb23260643d36b6fa978cdf91cede87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51f3276ac5f26016e51f1d0a9268cee3 = $(`<div id="html_51f3276ac5f26016e51f1d0a9268cee3" style="width: 100.0%; height: 100.0%;">Volcano name: Torfajokull Height: 1190 m Longitude: 63.56 N Latitude: 19.06 W</div>`)[0];
+            popup_9bb23260643d36b6fa978cdf91cede87.setContent(html_51f3276ac5f26016e51f1d0a9268cee3);
+        
+
+        marker_3869722c4835b3162a9799027dfc4266.bindPopup(popup_9bb23260643d36b6fa978cdf91cede87)
+        ;
+
+        
+    
+    
+            marker_3869722c4835b3162a9799027dfc4266.bindTooltip(
+                `<div>
+                     Torfajokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d56addce7ed5e948b9aad991736681e4 = L.marker(
+                [64.77, -17.830000000000002],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_2b1c1be5052c122579ad2d0e2972fe6d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_d56addce7ed5e948b9aad991736681e4.setIcon(beautify_icon_2b1c1be5052c122579ad2d0e2972fe6d);
+        
+    
+        var popup_c8a73902837fd06d052b31dbfe046f8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb56d929e30d73065b9d6007b28ab444 = $(`<div id="html_cb56d929e30d73065b9d6007b28ab444" style="width: 100.0%; height: 100.0%;">Volcano name: Tungnafellsjokull Height: 1523 m Longitude: 64.45 N Latitude: 17.55 W</div>`)[0];
+            popup_c8a73902837fd06d052b31dbfe046f8d.setContent(html_cb56d929e30d73065b9d6007b28ab444);
+        
+
+        marker_d56addce7ed5e948b9aad991736681e4.bindPopup(popup_c8a73902837fd06d052b31dbfe046f8d)
+        ;
+
+        
+    
+    
+            marker_d56addce7ed5e948b9aad991736681e4.bindTooltip(
+                `<div>
+                     Tungnafellsjokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c69175e47df6225d78810430eefa064b = L.marker(
+                [63.57, -20.490000000000002],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_a4c712116bf6e6638879e16c58abc189 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_c69175e47df6225d78810430eefa064b.setIcon(beautify_icon_a4c712116bf6e6638879e16c58abc189);
+        
+    
+        var popup_11d382f574bccd3c71959b413045abe5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9df91d55c8dc7d318c631bdf31be53a = $(`<div id="html_f9df91d55c8dc7d318c631bdf31be53a" style="width: 100.0%; height: 100.0%;">Volcano name: Vestmannaeyjar Height: 283 m Longitude: 63.25 N Latitude: 20.21 W</div>`)[0];
+            popup_11d382f574bccd3c71959b413045abe5.setContent(html_f9df91d55c8dc7d318c631bdf31be53a);
+        
+
+        marker_c69175e47df6225d78810430eefa064b.bindPopup(popup_11d382f574bccd3c71959b413045abe5)
+        ;
+
+        
+    
+    
+            marker_c69175e47df6225d78810430eefa064b.bindTooltip(
+                `<div>
+                     Vestmannaeyjar Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8b6a559953f35ec5a04bcd67ccdfec1 = L.marker(
+                [65.85, -16.86],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_c066b523892e704f299f8f71ded68c60 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_f8b6a559953f35ec5a04bcd67ccdfec1.setIcon(beautify_icon_c066b523892e704f299f8f71ded68c60);
+        
+    
+        var popup_2ae557751b709cd193ddee1fb03b8772 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e10afb3b3d80b64f4c4c5d2f12b7f129 = $(`<div id="html_e10afb3b3d80b64f4c4c5d2f12b7f129" style="width: 100.0%; height: 100.0%;">Volcano name: Theistareykir Height: 540 m Longitude: 65.53 N Latitude: 16.58 W</div>`)[0];
+            popup_2ae557751b709cd193ddee1fb03b8772.setContent(html_e10afb3b3d80b64f4c4c5d2f12b7f129);
+        
+
+        marker_f8b6a559953f35ec5a04bcd67ccdfec1.bindPopup(popup_2ae557751b709cd193ddee1fb03b8772)
+        ;
+
+        
+    
+    
+            marker_f8b6a559953f35ec5a04bcd67ccdfec1.bindTooltip(
+                `<div>
+                     Theistareykir Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08dbf3ce4be01f0de1a45c5235f5c7e0 = L.marker(
+                [64.47999999999999, -17.650000000000002],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_b364b44d783df395c2c26ee13df50fa0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_08dbf3ce4be01f0de1a45c5235f5c7e0.setIcon(beautify_icon_b364b44d783df395c2c26ee13df50fa0);
+        
+    
+        var popup_6b529c0e3f8f4dadc882b2ad63d13983 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27f18e458ad8043b17747eabe90eaf26 = $(`<div id="html_27f18e458ad8043b17747eabe90eaf26" style="width: 100.0%; height: 100.0%;">Volcano name: Thordarhyrna Height: 1650 m Longitude: 64.16 N Latitude: 17.37 W</div>`)[0];
+            popup_6b529c0e3f8f4dadc882b2ad63d13983.setContent(html_27f18e458ad8043b17747eabe90eaf26);
+        
+
+        marker_08dbf3ce4be01f0de1a45c5235f5c7e0.bindPopup(popup_6b529c0e3f8f4dadc882b2ad63d13983)
+        ;
+
+        
+    
+    
+            marker_08dbf3ce4be01f0de1a45c5235f5c7e0.bindTooltip(
+                `<div>
+                     Thordarhyrna Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25d7ce2ca1211b7ccc728da997f3e714 = L.marker(
+                [64.32, -16.67],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_ede2e981bd03585b5516e0c1e33dd37d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_25d7ce2ca1211b7ccc728da997f3e714.setIcon(beautify_icon_ede2e981bd03585b5516e0c1e33dd37d);
+        
+    
+        var popup_f040936af22241754bd2c377ea527403 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_889d9be84e46fdb3a731ad1d3ee3f766 = $(`<div id="html_889d9be84e46fdb3a731ad1d3ee3f766" style="width: 100.0%; height: 100.0%;">Volcano name: Oraefajokull Height: 2110 m Longitude: 64.00 N Latitude: 16.39 W</div>`)[0];
+            popup_f040936af22241754bd2c377ea527403.setContent(html_889d9be84e46fdb3a731ad1d3ee3f766);
+        
+
+        marker_25d7ce2ca1211b7ccc728da997f3e714.bindPopup(popup_f040936af22241754bd2c377ea527403)
+        ;
+
+        
+    
+    
+            marker_25d7ce2ca1211b7ccc728da997f3e714.bindTooltip(
+                `<div>
+                     Oraefajokull Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8a5e1a0631cea656cdb83cab64795aa = L.marker(
+                [71.36999999999999, -8.36],
+                {}
+            ).addTo(feature_group_a547ddeef3a697b7aa94a5f4e5138377);
+        
+    
+            var beautify_icon_771ce28e5ab9be0a60dbbd538c74a2fd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "#000", "borderWidth": 3, "icon": "fa volcano", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "#000"}
+            )
+            marker_c8a5e1a0631cea656cdb83cab64795aa.setIcon(beautify_icon_771ce28e5ab9be0a60dbbd538c74a2fd);
+        
+    
+        var popup_0d28ccf870b773a4a520573658b53098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af87f91bae64288e863331b0dfacfba7 = $(`<div id="html_af87f91bae64288e863331b0dfacfba7" style="width: 100.0%; height: 100.0%;">Volcano name: Beerenberg Height: 2085 m Longitude: 71.05 N Latitude: 8.08 W</div>`)[0];
+            popup_0d28ccf870b773a4a520573658b53098.setContent(html_af87f91bae64288e863331b0dfacfba7);
+        
+
+        marker_c8a5e1a0631cea656cdb83cab64795aa.bindPopup(popup_0d28ccf870b773a4a520573658b53098)
+        ;
+
+        
+    
+    
+            marker_c8a5e1a0631cea656cdb83cab64795aa.bindTooltip(
+                `<div>
+                     Beerenberg Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

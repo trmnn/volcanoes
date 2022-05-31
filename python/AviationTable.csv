@@ -1,0 +1,44 @@
+Advisory measures: Avoid flying less than 4000 FT above vertical limits during eruption,,,,,,,,,,,,,
+Volcano name,SI Volcano name,ICAO,Lat,Long,Height (ASL),Height (ASL),Reasonable Worst,Reasonable Worst,Most likely Vert.,Year of last eruption,Predominant,Probable duration:,Probable duration:
+,,code,(Nggmm),(Wgggmm),meters,feet,Vertical Limits*,Vertical Limits*,Limits (ASL) km,,activity,effusive,explosive
+,,,,,,,(ASL) km,thous. (ASL) Feet,,,,,
+Askja,Askja,373060,N6503,W01647,1516,4974,35,115,3-12,1961,Effusive-Explosive,weeks to months,hours to weeks
+Bárðarbunga,Bardarbunga,373030,N6438,W01730,2000,6562,25,82,3-12,2014,Effusive-Explosive,weeks to months,hours to weeks
+Brennisteinsfjöll,Brennisteinsfjoll,371040,N6357,W02145,610,2001,5,16,1-5,975,Effusive,weeks to months,
+Eldey,Eldey,371022,N6344,W02300,70,230,15,49,3-10,1926,Explosive,,days to weeks
+Esjufjöll,Esjufjoll,374020,N6417,W01635,1745,5725,15,49,3-12,1927,Explosive,,hours to weeks
+Eyjafjallajökull,Eyjafjallajokull,372020,N6338,W01938,1651,5417,25,82,3-12,2010,Explosive-Effusive,weeks to months,hours to weeks
+Fremrinámar,Fremrinamar,373070,N6526,W01640,970,3182,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Grímsvötn,Grimsvotn,373010,N6425,W01720,1722,5650,25,82,3-12,2011,Explosive-Effusive,weeks to months,hours to weeks
+Grímsnes,Grimsnes,371060,N6403,W02053,200,656,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Heiðarsporðar,Heidarspordar,373082,N6535,W01649,490,1608,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Hekla,Hekla,372070,N6360,W01940,1490,4888,35,115,10-25,2000,Explosive-Effusive,weeks to months,hours to weeks
+Helgrindur,Helgrindur,370020,N6452,W02315,986,3235,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Hengill,Hengill,371050,N6405,W02118,803,2635,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Hofsjökull,Hofsjokull,371090,N6448,W01854,1795,5889,Unknown,Unknown,unknow,No eruptions in historical time,Effusive,weeks to months,
+Hrómundartindur,Hromundartindur,371051,N6404,W02112,550,1804,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Katla,Katla,372030,N6338,W01907,1490,4888,35,115,10-25,1918,Explosive-Effusive,weeks to months,hours to weeks
+Krafla,Krafla,373080,N6543,W01647,800,2625,15,49,1-5,1984,Effusive,weeks to months,
+Krýsuvík,Krysuvik,371030,N6355,W02204,360,1181,5,16,1-5,2021,Effusive,weeks to months,
+Kverkfjöll,Kverkfjoll,373050,N6439,W01640,1933,6342,25,82,3-12,No eruptions in historical time,Effusive-Explosive,weeks to months,hours to weeks
+Langjökull,Hveravellir,371080,N6451,W01947,1435,4708,Unknown,Unknown,unknow,No eruptions in historical time,Effusive,weeks to months,
+Ljósufjöll,Ljosufjoll,370030,N6455,W02238,1063,3488,5,16,1-5,950,Effusive,weeks to months,
+Prestahnúkur,Prestahnukur,371070,N6436,W02038,1385,4544,5,16,1-5,900,Effusive,weeks to months,
+Reykjanes,Reykjanes,371020,N6349,W02243,140,459,15,49,3-10,1240,Effusive-Explosive,weeks to months,days to weeks
+Snæfell,Snaefell,374801,N6448,W01534,1833,6014,15,49,3-12,No eruptions in historical time,Effusive-Explosive,weeks to months,hours to weeks
+Snæfellsjökull,Snaefellsjokull,370010,N6448,W02347,1446,4744,25,82,3-12,No eruptions in historical time,Explosive-Effusive,weeks to months,hours to weeks
+Tindfjallajökull,Tindfjallajokull,372040,N6347,W01934,1464,4803,25,82,3-12,No eruptions in historical time,Explosive-Effusive,weeks to months,hours to weeks
+Torfajökull,Torfajokull,372050,N6356,W01906,1190,3904,25,82,3-12,1477,Explosive-Effusive,weeks to months,hours to weeks
+Tungnafellsjökull,Tungnafellsjokull,373040,N6445,W01755,1523,4997,Unknown,Unknown,unknow,No eruptions in historical time,Effusive,weeks to months,
+Vestmannaeyjar,Vestmannaeyjar,372010,N6325,W02021,283,928,15,49,3-10,1973,Explosive-Effusive,weeks to months,days to weeks
+Þeistareykir,Theistareykir,373090,N6553,W01658,540,1772,5,16,1-5,No eruptions in historical time,Effusive,weeks to months,
+Þórðarhyrna,Thordarhyrna,373012,N6416,W01737,1650,5413,25,82,3-12,1903,Explosive-Effusive,weeks to months,hours to weeks
+Öræfajökull,Oraefajokull,374010,N6400,W01639,2110,6923,35,115,3-12,1727,Explosive,,hours to weeks
+Beerenberg,Beerenberg,376010,N7105,W00808,2085,6841,25,82,3-15,1985,,,
+Volcanic systems where effusive eruptions dominate are assigned most likely vertical limit between 1-5 km and probable duration of weeks to months.,,,,,,,,,,,,,
+Volcanic systems where explosive eruptions with local tephra distribution and/or effusive eruptions occur are assigned most likely vertical limit between 3-12 km and probable duration of hours to weeks.,,,,,,,,,,,,,
+Volcanic systems where explosive eruptions with regional tephra distribution occur are assigned most likely vertical limit between 10-25 km and probable duration of hours to weeks.,,,,,,,,,,,,,
+Volcanic systems where submarine eruptions may occur are assigned most likely vertical limits between 3-10 km and duration of days to weeks although possible maximum vertical limit reaches 15 km.,,,,,,,,,,,,,
+* Top maximum height expected at the start of an eruption,,,,,,,,,,,,,
+Information provided in this document is based on current knowledge and may change.,,,,,,,,,,,,,
+Date created: April 12 2021,,,,,,,,,,,,,
