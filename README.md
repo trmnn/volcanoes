@@ -14,7 +14,7 @@ Project uses:
 
 <img src="map.jpg" width="600" height="360" />	 
 
-![map_hover](map_hover.jpg?raw=true "When mouse hover")
+<img src="map_hover.jpg" width="300" height="180" />	 
 
 
 `code`
