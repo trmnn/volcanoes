@@ -1,4 +1,4 @@
-PYTHON PROJECT
+<h2>Python Volcano Map Project</h2>
 
 This project creates an interactive html map with marked locations of Volcanoes in Iceland.
 It uses data available from Iceland Met Office which includes locations, height and names 
@@ -12,5 +12,5 @@ Project uses:
 	 folium
 	 docker
 ![map](map.jpg?raw=true "Map")
-!https://github.com/trmnn/volcanoes/blob/master/map.jpg?raw=true
-!https://github.com/trmnn/volcanoes/blob/master/map_hover.jpg?raw=true
+![map_hover](map_hover.jpg?raw=true "When mouse hover")
+
