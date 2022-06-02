@@ -12,8 +12,8 @@ Project uses:
 - folium
 - docker
 
-	 
-![map](map.jpg?raw=true =800x600)
+<img src="map.jpg" width="800" height="600" />	 
+
 ![map_hover](map_hover.jpg?raw=true "When mouse hover")
 
 
