@@ -4,13 +4,7 @@ This project creates an interactive html map with marked locations of Volcanoes 
 It uses data available from Iceland Met Office which includes locations, height and names <br>
 of all active and dormant volcanoes. I use pandas package to get the relevant data from file <br>
 and folium package to draw the map and place the markers to my specifications.
-
-
-Project uses:
-- python
-- pandas
-- folium
-- docker
+<br>Project uses: python, pandas, folium, docker
 <p float="left">
  <img src="map.jpg" width="550" height="360"/>	 
 
