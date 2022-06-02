@@ -11,5 +11,6 @@ Project uses:
 	 pandas
 	 folium
 	 docker
-https://github.com/trmnn/volcanoes/blob/master/map.jpg?raw=true
-https://github.com/trmnn/volcanoes/blob/master/map-hover.jpg?raw=true
+![map](map.jpg?raw=true "Map")
+!https://github.com/trmnn/volcanoes/blob/master/map.jpg?raw=true
+!https://github.com/trmnn/volcanoes/blob/master/map_hover.jpg?raw=true
