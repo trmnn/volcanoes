@@ -6,11 +6,11 @@ of all active and dormant volcanoes.
 I use pandas package to get the relevant data from file and folium package to draw the map
 and markers to my specifications.
 
-<h4>Project uses:
+<h4>Project uses:</h4>
 	 python
 	 pandas
 	 folium
-	 docker</h4>
+	 docker
 ![map](map.jpg?raw=true "Map")
 ![map_hover](map_hover.jpg?raw=true "When mouse hover")
 
