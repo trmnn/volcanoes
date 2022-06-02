@@ -11,10 +11,13 @@ Project uses:
 - pandas
 - folium
 - docker
+<p float="left">
+ <img src="map.jpg" width="550" height="360"/>	 
 
-<img src="map.jpg" width="550" height="360"/>	 
+<img src="map_hover.jpg" width="300" height="300" />	
+</p>
 
-<img src="map_hover.jpg" width="300" height="300" />	 
+ 
 
 
 `code`
