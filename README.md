@@ -5,7 +5,7 @@ I use pandas package to get the relevant data from file and folium package to dr
 and markers to my specifications.
 
 Project uses:
-	-python
-	-pandas
-	-folium
-	-docker
+	 python
+	 pandas
+	 folium
+	 docker
