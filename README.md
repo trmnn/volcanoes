@@ -12,7 +12,7 @@ Project uses:
 - folium
 - docker
 
-<img src="map.jpg" width="600" height="360"/>	 
+<img src="map.jpg" width="580" height="360"/>	 
 
 <img src="map_hover.jpg" width="300" height="300" />	 
 
