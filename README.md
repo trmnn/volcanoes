@@ -13,7 +13,7 @@ Project uses:
 - docker
 
 	 
-![map](map.jpg?raw=true "Map")
+![map](map.jpg?raw=true "Map" =800x600)
 ![map_hover](map_hover.jpg?raw=true "When mouse hover")
 
 
