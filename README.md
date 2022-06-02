@@ -12,7 +12,7 @@ Project uses:
 - folium
 - docker
 
-<img src="map.jpg" width="640" height="360" />	 
+<img src="map.jpg" width="600" height="360" />	 
 
 ![map_hover](map_hover.jpg?raw=true "When mouse hover")
 
