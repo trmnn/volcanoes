@@ -1,3 +1,5 @@
+PYTHON PROJECT
+
 This project creates an interactive html map with marked locations of Volcanoes in Iceland.
 It uses data available from Iceland Met Office which includes locations, height and names 
 of all active and dormant volcanoes. 
