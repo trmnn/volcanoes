@@ -3,8 +3,8 @@ services:
   python:
     build: ./python
     volumes:
-    - /home/:/app
-    stdin_open: true
-    tty: true
+    - ./:/app
+    #stdin_open: true
+    #tty: true
     command: "python3 appfolium.py"
   
